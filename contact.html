@@ -45,25 +45,44 @@
         }
         .image-item {
             text-align: center; /* Center text below images */
+            position: relative; /* For positioning the button */
         }
         img {
             width: 150px; /* Set a fixed width for the images */
-            height: auto; /* Maintain aspect ratio */
+            height: 150px; /* Set a fixed height for uniformity */
             border-radius: 10px; /* Optional: rounded corners */
         }
         .button {
-            margin-top: 10px; /* Space above the button */
-            padding: 10px 20px;
+            position: absolute; /* Position button over the image */
+            top: 65px; /* Adjust position to center above the image */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center button */
+            width: 50px; /* Circular button width */
+            height: 50px; /* Circular button height */
             background-color: #007BFF; /* Blue background */
             color: white;
             border: none;
-            border-radius: 5px; /* Rounded corners */
+            border-radius: 50%; /* Make it circular */
             cursor: pointer;
             text-decoration: none; /* Remove underline */
             font-weight: bold;
+            display: flex; /* Center text inside button */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            transition: background-color 0.3s; /* Smooth transition */
         }
         .button:hover {
             background-color: #0056b3; /* Darker blue on hover */
+        }
+        .dark-gray {
+            background-color: #333; /* Dark gray background */
+            width: 100%; /* Full width */
+            height: 40px; /* Height of the dark gray area */
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            margin-top: 10px; /* Space above dark gray area */
+            color: white; /* Text color */
         }
     </style>
 </head>
@@ -78,17 +97,20 @@
     <div class="content">
         <div class="image-container">
             <div class="image-item">
-                <img src="images/github2.png" alt="github"> <!-- Replace with your image -->
-                <a href="https://github.com/Maxeedeeeeee" class="button">Go to Link 1</a> <!-- Replace with your link -->
+                <img src="images/discord.png" alt="Description of Image 1"> <!-- Replace with your image -->
+                <a href="https://dsc.gg/@clubmc" class="button">1</a> <!-- Replace with your link -->
             </div>
             <div class="image-item">
-                <img src="images/youtube.png" alt="Youtube"> <!-- Replace with your image -->
-                <a href="youtube.com/@Clubmc" class="button">Go to Link 2</a> <!-- Replace with your link -->
+                <img src="images/github2.png" alt="Description of Image 2"> <!-- Replace with your image -->
+                <a href="https://github.com/Maxeedeeeeee" class="button">2</a> <!-- Replace with your link -->
             </div>
             <div class="image-item">
-                <img src="images/discord.png" alt="Discord"> <!-- Replace with your image -->
-                <a href="dsc.gg/@clubmc" class="button">Go to Link 3</a> <!-- Replace with your link -->
+                <img src="images/youtube.png" alt="Description of Image 3"> <!-- Replace with your image -->
+                <a href="youtube.com/@Clubmc" class="button">3</a> <!-- Replace with your link -->
             </div>
+        </div>
+        <div class="dark-gray">
+            <p>Dark Gray Area Below Images</p>
         </div>
     </div>
 </body>
