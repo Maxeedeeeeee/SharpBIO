@@ -8,47 +8,67 @@
         body {
             background-color: #808080; /* Gray background */
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+            display: flex; /* Use flexbox for layout */
         }
-        nav {
+        .navbar {
             background-color: #404040; /* Darker gray for the navbar */
-            padding: 10px;
-            position: sticky;
-            top: 0;
+            padding: 20px;
+            width: 200px; /* Fixed width for the navbar */
+            height: 100vh; /* Full height */
+            box-sizing: border-box; /* Includes padding in width */
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            display: block; /* Makes links stack vertically */
+            margin: 10px 0;
             text-decoration: none;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
+        .content {
+            flex: 1; /* Fills the remaining space */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers content horizontally */
+            justify-content: flex-start; /* Aligns content to the top */
+            padding: 20px; /* Padding around content */
+        }
         .circle {
             width: 200px; /* Circle diameter */
             height: 200px; /* Circle diameter */
             background-color: #A9A9A9; /* Lighter gray for the circle */
             border-radius: 50%; /* Makes it a circle */
-            margin: 50px auto; /* Centers the circle */
             display: flex;
             align-items: center;
             justify-content: center;
             color: black;
             font-size: 24px;
+            margin-top: 20px; /* Space above the circle */
+        }
+        img {
+            width: 100%; /* Full width for the image */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="Home.html">Home</a>
-        <a href="Contact.html">Contact</a>
-        <a href="Smallerinfo.html">Smaller Info</a>
-    </nav>
-    <div class="circle">
-        Age Information
+    <div class="navbar">
+        <img src="images/your-image.jpg" alt="Your Image"> <!-- Replace with your image -->
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Smallerinfo.html">Smaller Info</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="circle">
+            Age Information
+            Age: 14
+        </div>
     </div>
 </body>
 </html>
