@@ -52,11 +52,15 @@
             height: 150px; /* Set a fixed height for uniformity */
             border-radius: 10px; /* Optional: rounded corners */
         }
+        .button-container {
+            display: flex; /* Align buttons horizontally */
+            gap: 20px; /* Space between buttons */
+            margin-top: 10px; /* Space above button container */
+            background-color: #333; /* Dark gray background for buttons */
+            padding: 10px; /* Padding around the button container */
+            border-radius: 5px; /* Optional: rounded corners for the container */
+        }
         .button {
-            position: absolute; /* Position button over the image */
-            top: 65px; /* Adjust position to center above the image */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Center button */
             width: 50px; /* Circular button width */
             height: 50px; /* Circular button height */
             background-color: #007BFF; /* Blue background */
@@ -74,16 +78,6 @@
         .button:hover {
             background-color: #0056b3; /* Darker blue on hover */
         }
-        .dark-gray {
-            background-color: #333; /* Dark gray background */
-            width: 100%; /* Full width */
-            height: 40px; /* Height of the dark gray area */
-            display: flex;
-            align-items: center; /* Center content vertically */
-            justify-content: center; /* Center content horizontally */
-            margin-top: 10px; /* Space above dark gray area */
-            color: white; /* Text color */
-        }
     </style>
 </head>
 <body>
@@ -97,20 +91,19 @@
     <div class="content">
         <div class="image-container">
             <div class="image-item">
-                <img src="images/discord.png" alt="Description of Image 1"> <!-- Replace with your image -->
-                <a href="https://dsc.gg/@clubmc" class="button">1</a> <!-- Replace with your link -->
+                <img src="images/github2.png" alt="Github"> <!-- Replace with your image -->
             </div>
             <div class="image-item">
-                <img src="images/github2.png" alt="Description of Image 2"> <!-- Replace with your image -->
-                <a href="https://github.com/Maxeedeeeeee" class="button">2</a> <!-- Replace with your link -->
+                <img src="images/discord.png" alt="Discord"> <!-- Replace with your image -->
             </div>
             <div class="image-item">
-                <img src="images/youtube.png" alt="Description of Image 3"> <!-- Replace with your image -->
-                <a href="youtube.com/@Clubmc" class="button">3</a> <!-- Replace with your link -->
+                <img src="images/youtube.png" alt="Youtube"> <!-- Replace with your image -->
             </div>
         </div>
-        <div class="dark-gray">
-            <p>Dark Gray Area Below Images</p>
+        <div class="button-container">
+            <a href="https://github.com/Maxeedeeeeee" class="button">1</a> <!-- Replace with your link -->
+            <a href="https://dsc.gg/@clubmc" class="button">2</a> <!-- Replace with your link -->
+            <a href="https://youtube.com/@clubmc" class="button">3</a> <!-- Replace with your link -->
         </div>
     </div>
 </body>
