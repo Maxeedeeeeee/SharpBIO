@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            background-color: #808080; /* Gray background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Use flexbox for layout */
+        }
+        .navbar {
+            background-color: #404040; /* Darker gray for the navbar */
+            padding: 20px;
+            width: 200px; /* Fixed width for the navbar */
+            height: 100vh; /* Full height */
+            box-sizing: border-box; /* Includes padding in width */
+        }
+        nav a {
+            color: white;
+            display: block; /* Makes links stack vertically */
+            margin: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex: 1; /* Fills the remaining space */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers content horizontally */
+            justify-content: center; /* Centers content vertically */
+            padding: 20px; /* Padding around content */
+        }
+        .image-container {
+            display: flex; /* Use flex for image alignment */
+            justify-content: center; /* Center the images */
+            gap: 20px; /* Space between images */
+            margin-bottom: 20px; /* Space below the images */
+        }
+        .image-item {
+            text-align: center; /* Center text below images */
+        }
+        img {
+            width: 150px; /* Set a fixed width for the images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="Smallerinfo.html">Smaller Info</a>
+            <a href="Index.html">Home</a>
+            <a href="Age.html">Age</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="image-container">
+            <div class="image-item">
+                <img src="images/image1.jpg" alt="Description of Image 1"> <!-- Replace with your image -->
+                <p>Text below Image 1</p>
+            </div>
+            <div class="image-item">
+                <img src="images/image2.jpg" alt="Description of Image 2"> <!-- Replace with your image -->
+                <p>Text below Image 2</p>
+            </div>
+            <div class="image-item">
+                <img src="images/image3.jpg" alt="Description of Image 3"> <!-- Replace with your image -->
+                <p>Text below Image 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
